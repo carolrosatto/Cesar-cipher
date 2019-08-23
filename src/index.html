@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Alien Tradutor</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Alien Tradutor</h1>
     </div>
+
+    <form>
+<!--CHAVE DE CRIPTOGRAFIA-->
+        <label for="cipherkey">Insira a chave de criptografia:</label>
+        <input type="number" id="cipherkey" placeholder="Número da chave"/><br><br>
+<!--MENSAGEM PARA CODIFICAR-->
+        <label for="encodetext">Digite a mensagem que quer criptografar:</label>
+        <input type="text" placeholder="Mensagem" id="encodetext"/>
+        <input type="button" value="Criptografe!" id="encodebutton" onclick="encodeBtnFunction()"/> <br>
+        <!--Div pra printar o resultado-->
+        <div id="etext"></div>
+
+<!--MENSAGEM PARA DECODIFICAR-->
+        <label for="decodetext">Mensagem a ser descriptografado:</label>
+        <input type="text" placeholder="Mensagem alienígena" id="decodetext"/>
+        <input type="button" value="Descriptografe!" id="decodebutton" onclick="decodeBtnFunction()"/><br><br>
+        <!--Div para printar o resultado-->
+        <div id="dtext"></div>
+    </form>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
+    <footer>
+        <p>Carolina Rosatto 2019</p>
+        <p>Contact: <a href="mailto:carolrosatto@gmail.com">carolrosatto@gmail.com></a>.</p>
+    </footer>
+
   </body>
+
 </html>
