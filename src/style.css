@@ -1,0 +1,12 @@
+body {
+    background-image: url("Images/Sky.jpeg");
+    margin: 0;
+    background-size: cover;
+}
+
+#root {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    background: white;
+    
+}

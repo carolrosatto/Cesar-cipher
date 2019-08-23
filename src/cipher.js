@@ -13,12 +13,12 @@ window.cipher = {
 };
 //essas funções vão ser chamadas no html pelos botões
 
-function encode(encodeWord,key) {
+function encode(key, encodeWord) {
   let strToUpper = encodeWord.toUpperCase();
-//Variável com string vazia para inserir o resultado da criptografia
+  //Variável com string vazia para inserir o resultado da criptografia
   let encodedResult = "";
   let i;
-//Loop para fazer o cálculo em todas as letras da string
+  //Loop para fazer o cálculo em todas as letras da string
   for (i = 0; i < strToUpper.length; i++) { 
     
     let indexLetter = strToUpper.charCodeAt(i);
@@ -26,18 +26,18 @@ function encode(encodeWord,key) {
     if (indexLetter >= 65 && indexLetter <= 90) {
       let encodeFormula = ((indexLetter - 65 + key)%26 )+ 65;
       let newLetter = String.fromCharCode(encodeFormula);
-//Resultado somando à string vazia
+      //Resultado somando à string vazia
       encodedResult += newLetter;
     } else {
-//No caso de caracteres além dos colocados, deixar ele mesmo
-      encodedResult += strToUpper[i]
+      //No caso de caracteres além dos colocados, deixar ele mesmo
+      encodedResult += strToUpper[i];
     }          
   }
   return encodedResult;
 }
 
 //No decode é o mesmo processo, porém subtrai o deslocamento
-function decode(decodeWord,key) {
+function decode(key, decodeWord) {
   let StrToUpper2 = decodeWord.toUpperCase();
   let decodedResult = "";
   let i;
@@ -56,4 +56,3 @@ function decode(decodeWord,key) {
   }
   return decodedResult;
 }
-
