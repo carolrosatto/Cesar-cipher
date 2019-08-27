@@ -46,7 +46,7 @@ function decode(key, decodeWord) {
     let indexLetter2 = decodeWord.charCodeAt(i);
 
     if (indexLetter2 >= 65 && indexLetter2 <= 90) {
-      let decodeFormula = ((indexLetter2 - 65 - key)%26 + 65);
+      let decodeFormula = ((indexLetter2 - 90 - key)%26 + 90);
       let newLetter2 = String.fromCharCode(decodeFormula);
 
       decodedResult += newLetter2;
