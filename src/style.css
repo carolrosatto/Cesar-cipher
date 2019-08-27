@@ -1,12 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
 body {
     background-image: url("Images/Sky.jpeg");
-    margin: 0;
     background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-size: 130%;
+    color: white;
+
 }
 
 #root {
+    padding: 2%;
     font-family: 'Teko', sans-serif;
-    font-size: 35px;
-    background: white;
+    font-size: 170%;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px #4900ff
+            
+}
+
+.keybox {
+    text-align: center;
+    padding: 1%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+fieldset {
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+input[type="text"] {
     
+    width: 150px;
+    background-color: #D8BFD8;
+}
+
+input[type="number"]{
+    width: 30px;
+    background-color: #D8BFD8;
+}
+
+input[type="button"]{
+    background-color: black;
+    color: #4900ff;
+    border: solid 2px #4900ff;
+    padding: 5px;
+}
+
+footer{
+    font-size: 80%;
+    text-align: center;
+    padding: 3%;
+
 }
