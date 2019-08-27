@@ -12,6 +12,19 @@ O público é bem abrangente: qualquer terráqueo que queira ter uma conversa am
 
 Cada região do planeta desconhecido tem uma chave de criptografia, uma sutileza do idioma, que deve ser inserida no tradutor para fazer o processo correto.
 
+### O que é Cifra de César?
+A Cifra de César é um tipo muito antigo de criptografia, que utiliza o posicionamento das letras no alfabeto e um deslocamento fixo.
+
+A letra inicial é substituída pela letra da posição que está n letras à frente (n é o número do deslocamento).
+
+**Exemplo:**
+
+Letras iniciais: B A N A N A
+
+Deslocamento 2
+
+Resultado: DCPCPC
+
 ## Limitações da aplicação:
 
 São características que ainda não foram tratadas, mas funcionarão em próximas atualizações.
