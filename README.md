@@ -23,7 +23,7 @@ Letras iniciais: B A N A N A
 
 Deslocamento 2
 
-Resultado: DCPCPC
+Resultado: D C P C P C
 
 ## Limitações da aplicação:
 
