@@ -29,8 +29,6 @@ Resultado: D C P C P C
 
 São características que ainda não foram tratadas, mas funcionarão em próximas atualizações.
 
-- Não criptografa/descriptografa letras minúsculas;
-
 - Não criptografa/descriptografa números e outros caracteres, somente letras maiúsculas;
 
 - Não aceita offset negativo.
