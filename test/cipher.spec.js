@@ -24,12 +24,12 @@ describe("cipher", () => {
     // Se quiser adicionar testes para letras minúsculas, descomente o teste
     // abaixo.
     //
-    // it('should return "hijklmnopqrstuvwxyzabcdefg" for "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
-    //   assert.equal(
-    //     cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz'),
-    //     'hijklmnopqrstuvwxyzabcdefg'
-    //   );
-    // });
+    it("should return 'hijklmnopqrstuvwxyzabcdefg' for 'abcdefghijklmnopqrstuvwxyz' with offset 33", () => {
+      assert.equal(
+        cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"),
+        "hijklmnopqrstuvwxyzabcdefg"
+      );
+    });
 
     // Hacker edition
     //
